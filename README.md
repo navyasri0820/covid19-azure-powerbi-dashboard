@@ -1,44 +1,53 @@
-# 🌍 COVID-19 Azure Power BI Dashboard
+# COVID-19 Azure Power BI Dashboard
 
-An end-to-end cloud-based analytics solution showcasing:
+End-to-end COVID-19 analytics solution using Azure Data Factory, Azure SQL Database, and Power BI.
 
-- 📦 Azure Data Factory: Scheduled ETL from Blob to SQL  
-- 🗄 Azure SQL: Centralized data store  
-- 📊 Power BI: Real-time interactive dashboard with drillthrough
+## 🚀 Project Overview
 
-## 🚀 Key Features
+This project demonstrates how to build a scalable cloud-based ETL and reporting pipeline. It extracts COVID-19 data, loads it into Azure SQL via Data Factory, and visualizes it in Power BI.
 
-- Automated pipeline using ADF (every 15 min)
-- Drillthrough by country
-- KPI cards & slicers (Total Cases, Deaths, Recovery)
-- Country-level and page-level navigation
+## 🔧 Tech Stack
 
-## 🔧 Architecture
+- **Azure Data Factory** – ETL orchestration and scheduling
+- **Azure SQL Database** – Central data storage
+- **Power BI** – Interactive dashboards
+- **GitHub** – Version control and project documentation
 
-`Azure Blob Storage ➜ ADF ➜ Azure SQL Database ➜ Power BI`
+## 📊 Dashboard Pages
 
-## 📁 Contents
-
-| File | Description |
+| Page | Description |
 |------|-------------|
-| `ADFCovidcases_Updated.pbix` | Power BI Report |
-| `AzureSql.png` | Azure SQL proof |
-| `ADF_pipeline_runs.png` | Data Factory pipeline screenshot |
-| `covid_cases_summary_dummy.csv` | Dummy dataset (optional) |
-
-## 👩‍💻 Skills Demonstrated
-
-- Azure Data Factory (pipelines, triggers)
-- Azure SQL (schema creation, data insert)
-- Power BI (DAX, visualization, drillthrough)
-- End-to-end data integration
+| Page 1 | Global KPI cards + country filter |
+| Page 2 | Country comparison via bar chart |
+| Page 3 | Drillthrough insights per country and date |
 
 ## 📸 Screenshots
 
-(Upload and link to visuals here)
+| Pipeline Trigger | Azure SQL Table |
+|------------------|-----------------|
+| ![Pipeline](Pipeline_Running.png) | ![SQL](AzureSql.png) |
 
-## 📬 Connect with me
+| Power BI Dashboards |
+|---------------------|
+| ![Page 1](CovidCases_Powerbi_Page1.png) |
+| ![Page 2](CovidCases_Powerbi_Page2.png) |
+| ![Page 3](CovidCases_Powerbi_Page3.png) |
 
-🔗 https://www.linkedin.com/in/gadaley-navya-sri-4b5aa81ba/ 
-💼 [[Portfolio]](https://github.com/navyasri0820/covid19-azure-powerbi-dashboard.git)(https://github.com/navyasri0820)
+## 📂 Files
+
+- `ADFCovidcases_Updated.pbix` – Power BI file
+- `Pipeline_creation.png` – ADF pipeline config
+- `README.md` – Project overview
+
+## 🧠 Learning Outcomes
+
+- Built a cloud ETL pipeline from scratch
+- Automated data refresh with ADF triggers
+- Visualized trends and drilldowns using DAX & Power BI
+
+## 📎 Useful Links
+
+- https://www.linkedin.com/in/gadaley-navya-sri-4b5aa81ba/ [LinkedIn]
+- https://github.com/navyasri0820/covid19-azure-powerbi-dashboard.git [github Portfolio Project]
+
 
